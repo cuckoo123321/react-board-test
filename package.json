@@ -8,7 +8,6 @@
     "@testing-library/user-event": "^13.5.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.0.2",
-    "prettier": "^3.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -22,13 +21,13 @@
     "eject": "react-scripts eject"
   },
   "husky": {
-      "hooks": {
+    "hooks": {
       "pre-commit": "lint-staged"
-      }
+    }
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-    "prettier --write"
+      "prettier --write"
     ]
   },
   "eslintConfig": {
@@ -48,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "prettier": "3.0.3"
   }
 }
